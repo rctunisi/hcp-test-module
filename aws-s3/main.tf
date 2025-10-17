@@ -8,3 +8,6 @@ resource "aws_s3_bucket_versioning" "this" {
     status = "Enabled"
   }
 }
+provider "aws" {
+  region = var.region
+}
